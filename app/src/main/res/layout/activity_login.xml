@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="50dp"
+        android:text="欢迎登录"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <!--提示信息-->
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_alignStart="@+id/tv_welcome"
+        android:text="请登录您的账户"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>
