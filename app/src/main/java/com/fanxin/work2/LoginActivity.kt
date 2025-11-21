@@ -1,6 +1,7 @@
 package com.fanxin.work2
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,15 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<android.view.View>(R.id.btn_wechat_login).setOnClickListener {
+            Toast.makeText(this, "微信登录", Toast.LENGTH_SHORT).show()
+        }
+
+        findViewById<android.view.View>(R.id.btn_apple_login).setOnClickListener {
+            Toast.makeText(this, "Apple登录", Toast.LENGTH_SHORT).show()
+        }
     }
+
+
 }

@@ -35,52 +35,44 @@
         />
 
     <!--请输入邮箱-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_email"
+    <EditText
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_hint"
         android:layout_alignStart="@+id/tv_hint"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="50dp"
-        android:hint="@string/input_email">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:drawableStart="@drawable/ic_mail_24"
-            android:background="@color/light_gray"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:background="@color/light_gray"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_mail_24"
+        android:hint="@string/input_email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
 
     <!--请输入密码-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_password"
+    <EditText
+        android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/til_email"
-        android:layout_alignStart="@+id/til_email"
+        android:layout_below="@id/et_email"
+        android:layout_alignStart="@+id/et_email"
         android:layout_marginTop="19dp"
         android:layout_marginEnd="50dp"
-        android:hint="@string/input_password">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:drawableStart="@drawable/ic_lock_24"
-            android:background="@color/light_gray"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:background="@color/light_gray"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
 
     <!--忘记密码-->
     <TextView
         android:id="@+id/tv_forget_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/til_password"
-        android:layout_alignEnd="@+id/til_password"
+        android:layout_below="@id/et_password"
+        android:layout_alignEnd="@+id/et_password"
         android:layout_marginTop="10dp"
         android:text="@string/forget_password"
         android:textColor="@color/blue"
@@ -94,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_forget_password"
-        android:layout_alignStart="@+id/til_password"
+        android:layout_alignStart="@+id/et_password"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/btn_login_background"
