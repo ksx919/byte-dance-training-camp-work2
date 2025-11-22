@@ -1,5 +1,6 @@
 package com.fanxin.work2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -24,6 +25,11 @@ class LoginActivity : AppCompatActivity() {
 
         findViewById<android.view.View>(R.id.btn_apple_login).setOnClickListener {
             Toast.makeText(this, "Apple登录", Toast.LENGTH_SHORT).show()
+        }
+
+        findViewById<android.view.View>(R.id.btn_login).setOnClickListener {
+            val Intent = Intent(this, MainActivity::class.java)
+            startActivity(Intent)
         }
     }
 

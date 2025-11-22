@@ -140,45 +140,65 @@
         android:layout_marginTop="24dp"
         android:orientation="horizontal">
 
-        
-        <Button
-            android:layout_marginEnd="10dp"
+        <!-- 微信登录 -->
+        <LinearLayout
             android:id="@+id/btn_wechat_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/btn_social_login_background"
-            android:text="微信登陆"
-            android:textColor="@color/black"
-            android:textSize="14sp"
             android:gravity="center"
-            android:drawablePadding="8dp"
-            app:icon="@mipmap/wechat"
-            app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@null"
-            app:backgroundTint="@null"
-            />
-        <Button
-            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"> <!-- 模拟Button点击水波纹 -->
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_wechat"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信登陆"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Apple登录 -->
+        <LinearLayout
             android:id="@+id/btn_apple_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="10dp"
             android:background="@drawable/btn_social_login_background"
-            android:text="Apple登陆"
-            android:textColor="@color/black"
-            android:textSize="14sp"
             android:gravity="center"
-            android:drawableStart="@mipmap/apple"
-            app:icon="@mipmap/apple"
-            app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@null"
-            android:drawablePadding="8dp"
-            app:backgroundTint="@null"
-            />
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"> <!-- 模拟Button点击水波纹 -->
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_apple"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple登陆"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
         </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"

@@ -10,4 +10,10 @@
     <string name="home">首页</string>
     <string name="information">信息</string>
     <string name="me">我的</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="personal_information">个人信息</string>
+    <string name="browsing_history">浏览历史</string>
+    <string name="settings">设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="feedback">意见反馈</string>
 </resources>
