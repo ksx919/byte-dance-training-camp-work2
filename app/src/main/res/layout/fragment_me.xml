@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_avatar_circle"
+        android:clipToOutline="true"
+        android:contentDescription="@string/app_name" />
+        
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_alignTop="@+id/iv_avatar"
+        android:layout_marginLeft="10dp"
+        android:text="用户名"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+        
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_avatar"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_alignBottom="@+id/iv_avatar"
+        android:text="欢迎来到信息APP"
+        android:textColor="@color/light_gray"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/me_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:background="@color/white"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:id="@+id/ll_me_information"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_person"
+                android:contentDescription="@string/personal_information" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/personal_information"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:contentDescription="@string/personal_information"
+                android:src="@mipmap/ic_right_arrows" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_gray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+            
+        <LinearLayout
+            android:id="@+id/ll_me_collect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_collect"
+                android:contentDescription="@string/my_collect" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/my_collect"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:contentDescription="@string/my_collect"
+                android:src="@mipmap/ic_right_arrows" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_gray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+            
+        <LinearLayout
+            android:id="@+id/ll_me_history"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_browsing_history"
+                android:contentDescription="@string/browsing_history" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/browsing_history"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:contentDescription="@string/browsing_history"
+                android:src="@mipmap/ic_right_arrows" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_gray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+            
+        <LinearLayout
+            android:id="@+id/ll_me_settings"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_settings"
+                android:contentDescription="@string/settings" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/settings"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:contentDescription="@string/settings"
+                android:src="@mipmap/ic_right_arrows" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_gray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+            
+        <LinearLayout
+            android:id="@+id/ll_me_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_about_us"
+                android:contentDescription="@string/about_us" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/about_us"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:contentDescription="@string/about_us"
+                android:src="@mipmap/ic_right_arrows" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_gray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+            
+        <LinearLayout
+            android:id="@+id/ll_me_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_feedback"
+                android:contentDescription="@string/feedback" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/feedback"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:contentDescription="@string/feedback"
+                android:src="@mipmap/ic_right_arrows" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
