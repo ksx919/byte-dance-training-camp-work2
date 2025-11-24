@@ -66,7 +66,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_person"
+                android:src="@drawable/ic_person"
                 android:contentDescription="@string/personal_information" />
             <TextView
                 android:layout_width="0dp"
@@ -81,7 +81,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|end"
                 android:contentDescription="@string/personal_information"
-                android:src="@mipmap/ic_right_arrows" />
+                android:src="@drawable/ic_right_arrows" />
         </LinearLayout>
         
         <View
@@ -103,7 +103,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_collect"
+                android:src="@drawable/ic_collect"
                 android:contentDescription="@string/my_collect" />
             <TextView
                 android:layout_width="0dp"
@@ -118,7 +118,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|end"
                 android:contentDescription="@string/my_collect"
-                android:src="@mipmap/ic_right_arrows" />
+                android:src="@drawable/ic_right_arrows" />
         </LinearLayout>
         
         <View
@@ -140,7 +140,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_browsing_history"
+                android:src="@drawable/ic_browsing_history"
                 android:contentDescription="@string/browsing_history" />
             <TextView
                 android:layout_width="0dp"
@@ -155,7 +155,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|end"
                 android:contentDescription="@string/browsing_history"
-                android:src="@mipmap/ic_right_arrows" />
+                android:src="@drawable/ic_right_arrows" />
         </LinearLayout>
         
         <View
@@ -177,7 +177,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_settings"
+                android:src="@drawable/ic_settings"
                 android:contentDescription="@string/settings" />
             <TextView
                 android:layout_width="0dp"
@@ -192,7 +192,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|end"
                 android:contentDescription="@string/settings"
-                android:src="@mipmap/ic_right_arrows" />
+                android:src="@drawable/ic_right_arrows" />
         </LinearLayout>
         
         <View
@@ -214,7 +214,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_about_us"
+                android:src="@drawable/ic_about_us"
                 android:contentDescription="@string/about_us" />
             <TextView
                 android:layout_width="0dp"
@@ -229,7 +229,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|end"
                 android:contentDescription="@string/about_us"
-                android:src="@mipmap/ic_right_arrows" />
+                android:src="@drawable/ic_right_arrows" />
         </LinearLayout>
         
         <View
@@ -251,7 +251,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_feedback"
+                android:src="@drawable/ic_feedback"
                 android:contentDescription="@string/feedback" />
             <TextView
                 android:layout_width="0dp"
@@ -266,7 +266,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|end"
                 android:contentDescription="@string/feedback"
-                android:src="@mipmap/ic_right_arrows" />
+                android:src="@drawable/ic_right_arrows" />
         </LinearLayout>
 
     </LinearLayout>

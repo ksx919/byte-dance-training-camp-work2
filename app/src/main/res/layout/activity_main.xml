@@ -42,7 +42,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="@string/home"
-                    android:src="@mipmap/ic_home_unselected" />
+                    android:src="@drawable/ic_home_unselected" />
 
                 <TextView
                     android:id="@+id/tv_home"
@@ -72,7 +72,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="@string/information"
-                    android:src="@mipmap/ic_information_unselected" />
+                    android:src="@drawable/ic_information_unselected" />
 
                 <TextView
                     android:id="@+id/tv_information"
@@ -102,7 +102,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="@string/me"
-                    android:src="@mipmap/ic_me_selected" />
+                    android:src="@drawable/ic_me_selected" />
 
                 <TextView
                     android:id="@+id/tv_me"
