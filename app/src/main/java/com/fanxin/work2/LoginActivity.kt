@@ -1,6 +1,7 @@
 package com.fanxin.work2
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class LoginActivity : AppCompatActivity() {
+
+    private lateinit var preferences: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,6 +23,8 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
+        preferences = getSharedPreferences("user", MODE_PRIVATE)
+
         findViewById<android.view.View>(R.id.btn_wechat_login).setOnClickListener {
             Toast.makeText(this, "微信登录", Toast.LENGTH_SHORT).show()
         }
@@ -28,8 +34,12 @@ class LoginActivity : AppCompatActivity() {
         }
 
         findViewById<android.view.View>(R.id.btn_login).setOnClickListener {
-            val Intent = Intent(this, MainActivity::class.java)
-            startActivity(Intent)
+            val editor = preferences.edit()
+            editor.putString("username", "江在程")
+            editor.putString("signature", "这是一条签名~")
+            editor.apply()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
